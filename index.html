@@ -27,15 +27,15 @@
       <div id="comments">
         <form onsubmit="postComment();return false;">
           Name: <input type="text" id="commenter"><br>
-          Comment: <input type="text" id="commentText"></br>
+          Comment: <input type="text" id="comment"></br>
           <input type="submit">
         </form>
       </div>
     </script>
 
     <script id="comment-template" type="text/x-lodash-template">
-      <div id="comment"></div>
-      <div id="footer"></div>
+      <div id="comment"><%= comment %></div>
+      <div id="footer"><%= commenter %></div>
     </script>
 
     <div id="mocha"></div>
